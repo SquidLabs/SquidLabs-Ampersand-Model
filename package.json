@@ -1,0 +1,52 @@
+{
+  "name": "base-ampersand-model",
+  "description": "An extension to ampersand-model that adds methods and properties to make it easier to use",
+  "version": "0.0.1",
+  "author": "Rick Butler <rick@rickbutler.com>",
+  "files": [
+    "base-ampersand-model.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/rickbutler/base-ampersand-model/issues"
+  },
+  "dependencies": {
+    "ampersand-model": "8.0.1",
+    "lodash": "^4.11.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.1",
+    "phantomjs": "^2.1.7",
+    "precommit-hook": "*",
+    "tape": "^4.8.0",
+    "zuul": "^3.9.0"
+  },
+  "homepage": "https://github.com/rickbutler/base-ampersand-model",
+  "keywords": [
+    "model, ampersand, state"
+  ],
+  "license": "MIT",
+  "main": "./ampersand-model.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RickButler/base-ampersand-model.git"
+  },
+  "scripts": {
+    "start": "zuul --local -- test/index.js",
+    "test": "zuul --phantom -- test/index.js",
+    "lint": "jshint .",
+    "validate": "npm ls"
+  },
+  "browserify": {
+    "transform": [
+      "ampersand-version"
+    ]
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ]
+}
+
+
+  
