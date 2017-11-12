@@ -1,3 +1,5 @@
+Copyright © 2017 Richard Butler
+
 Copyright © 2014 &yet, LLC and AmpersandJS contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a
